@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddScheduleActivity"
+    android:background="@drawable/add_schedule_gradient">
+
+    <TextView
+        android:id="@+id/addScheduleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="@string/add_schedule_header"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/darker_white"/>
+
+    <TextView
+        android:id="@+id/addScheduleTitleLabel"
+        style="@style/Add_Schedule_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_schedule_title_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleHeader" />
+
+    <EditText
+        android:id="@+id/addScheduleTitle"
+        style="@style/Add_Schedule_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/add_schedule_title_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleTitleLabel" />
+
+    <TextView
+        android:id="@+id/addScheduleDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_schedule_date_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleTitle"
+        style="@style/Add_Schedule_Label"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleDateLabel">
+
+        <TextView
+            android:id="@+id/addScheduleDate"
+            style="@style/Add_schedule_Placeholder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_schedule_no_date"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <Button
+            android:id="@+id/btnAddSchedulePickDate"
+            style="@style/Add_Schedule_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_schedule_pick_date_button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addScheduleTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_schedule_time_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDate"
+        style="@style/Add_Schedule_Label"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleTimeLabel">
+
+        <TextView
+            android:id="@+id/addScheduleTime"
+            style="@style/Add_schedule_Placeholder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_schedule_no_time"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+        <Button
+            android:id="@+id/btnAddSchedulePickTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_schedule_pick_time_button"
+            style="@style/Add_Schedule_Button"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addScheduleDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_schedule_description_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTime"
+        style="@style/Add_Schedule_Label"/>
+
+    <EditText
+        android:id="@+id/addScheduleDescription"
+        style="@style/Add_Schedule_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/add_schedule_description_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleDescriptionLabel" />
+
+    <TextView
+        android:id="@+id/addSchedulePhotoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_schedule_add_photo_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addScheduleDescription"
+        style="@style/Add_Schedule_Label"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSchedulePhotoLabel">
+
+        <TextView
+            android:id="@+id/addSchedulePhoto"
+            style="@style/Add_schedule_Placeholder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_schedule_no_photo" />
+
+        <Button
+            android:id="@+id/btnAddScheduleAddPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_schedule_add_photo_button"
+            style="@style/Add_Schedule_Button"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/add_schedule_confirm_add_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Add_Schedule_Button"/>
+</android.support.constraint.ConstraintLayout>

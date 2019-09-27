@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="assignment.android.scheduler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="27" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/scheduler_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/scheduler_icon"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="assignment.android.scheduler.SchedulePagerActivity"
+            android:parentActivityName="assignment.android.scheduler.ScheduleListActivity" />
+        <activity
+            android:name="assignment.android.scheduler.AddScheduleActivity"
+            android:parentActivityName="assignment.android.scheduler.ScheduleListActivity" />
+        <activity android:name="assignment.android.scheduler.ScheduleListActivity" >
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="assignment.android.scheduler.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="assignment.android.scheduler.WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

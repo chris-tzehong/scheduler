@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/amarante</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/asar</item>
+        <item>@font/audiowide</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bree_serif</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/carter_one</item>
+        <item>@font/dekko</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/happy_monkey</item>
+        <item>@font/lemon</item>
+        <item>@font/luckiest_guy</item>
+        <item>@font/margarine</item>
+        <item>@font/palanquin_dark</item>
+        <item>@font/permanent_marker</item>
+        <item>@font/quantico</item>
+        <item>@font/questrial</item>
+        <item>@font/russo_one</item>
+        <item>@font/salsa</item>
+        <item>@font/skranji</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>

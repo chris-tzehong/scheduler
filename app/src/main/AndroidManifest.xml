@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="assignment.android.scheduler">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/scheduler_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/scheduler_icon"
+        android:supportsRtl="true"
+        android:theme="@style/CustomActionBarTheme">
+        <activity
+            android:name=".SchedulePagerActivity"
+            android:parentActivityName=".ScheduleListActivity"/>
+        <activity
+            android:name=".AddScheduleActivity"
+            android:parentActivityName=".ScheduleListActivity" />
+        <activity android:name=".ScheduleListActivity">
+
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="assignment.android.scheduler.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Forge-15 i7\\Desktop\\School\\CSC2074-20190912T132813Z-001\\CSC2074\\Assignment 2 Submission_16027625\\Scheduler\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Forge-15 i7\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7e881120bf89de14399a4ac271254c85\\res\\values-lo\\values-lo.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1897",
+                        "endColumns": "100",
+                        "endOffsets": "1993"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Forge-15 i7\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\1bb5dbf6220308b42195d092cc85a7d9\\res\\values-lo\\values-lo.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,208,305,412,497,602,714,791,869,949,1056,1153,1251,1356,1459,1563,1720,1816",
+                        "endColumns": "102,96,106,84,104,111,76,77,79,106,96,97,104,102,103,156,95,80",
+                        "endOffsets": "203,300,407,492,597,709,786,864,944,1051,1148,1246,1351,1454,1558,1715,1811,1892"
+                    }
+                }
+            ]
+        }
+    ]
+}

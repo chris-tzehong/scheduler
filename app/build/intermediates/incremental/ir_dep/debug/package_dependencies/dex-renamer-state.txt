@@ -1,0 +1,4 @@
+#Thu Dec 13 15:15:23 SGT 2018
+base.0=C\:\\MBC2014-A2\\Assignment 2 Submission_16027625_attempt_2018-11-29-06-08-46_Scheduler\\Scheduler\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+path.0=classes.dex
+renamed.0=classes.dex
